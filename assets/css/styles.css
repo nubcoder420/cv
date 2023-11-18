@@ -1,0 +1,201 @@
+body {
+    background-color: #393E46;
+    color: #929AAB;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    padding: 20px;
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 30px;
+}
+
+h1 {
+    color: #EEEEEE;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header div {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+div p {
+    margin-bottom: 0;
+}
+
+nav {
+    color: #929AAB;
+    font-size: 36px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav i {
+    color: #929AAB;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+#name-title {
+    color: #EEEEEE;
+    margin-bottom: 24px;
+}
+
+/* Sections */
+.section-name {
+    color: #EEEEEE;
+}
+
+.section {
+    padding: 20px 20px;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+
+/* Media Queries for Responsive Design */
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+    nav i {
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+
+    #name-title {
+        margin-bottom: 12px;
+    }
+
+    .section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        font-size: 24px;
+    }
+
+    nav i {
+        margin-top: 4px;
+        margin-right: 6px;
+    }
+
+    #name-title {
+        margin-bottom: 8px;
+    }
+
+    .section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+/* Footer Section */
+footer {
+    color: #EEEEEE;
+    padding: 20px;
+    margin-top: 10px; /* Adjust margin as needed */
+    margin-left: 72px;
+    text-align: left;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 14px;
+    margin-top: 10px; /* Adjust spacing from the footer content */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    footer {
+        margin-left: 12px;
+        margin-right: 20px;
+    }
+}
+
+
+/* images */
+/* Additional CSS for Project Items */
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    width: 400px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    margin-right: 20px; /* Adjust the spacing between image and text */
+}
+
+/* Media Queries for Responsive Design */
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    .project-item {
+        flex-direction: column; /* Stack items in a column on smaller screens */
+        text-align: center;
+    }
+
+    .project-item img {
+        width: 300px;
+        height: 150px;
+        margin: 0; /* Remove the right margin on smaller screens */
+        margin-bottom: 10px; /* Add some space between image and text */
+    }
+
+    .project-item:nth-child(even) {
+        flex-direction: column-reverse; /* Reverse order for even-numbered items */
+    }
+
+    /* Additional styles for adjusting the second image */
+    .project-item:nth-child(2) img {
+        margin-top: 10px; /* Add some space between the image and paragraph */
+    }
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 480px) {
+    .project-item {
+        flex-direction: column; /* Stack items in a column on smaller screens */
+        text-align: left;
+    }
+
+    .project-item img {
+        width: 300px; /* Adjust image width for smaller screens */
+        height: 150px; /* Adjust image height for smaller screens */
+        margin-bottom: 10px; /* Add some space between image and text */
+        margin-top: 10px;
+    }
+
+    .project-item:nth-child(even) {
+        flex-direction: column-reverse; /* Reverse order for even-numbered items */
+    }
+}
